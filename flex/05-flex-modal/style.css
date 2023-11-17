@@ -15,13 +15,24 @@ body {
   justify-content: center;
 }
 
+/* outermost layer */
 .modal {
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: row;
+  padding:16px;
 }
 
+/* next layer deep */
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding-right: 16px;
+}
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -33,6 +44,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+ 
+}
+
+
+/* deeper into not-icon div */
+.top-row {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.header {
+  font-weight: bold;
+  font-size: larger;
+
 }
 
 .close-button {
@@ -50,6 +77,17 @@ body {
   padding: 0;
 }
 
+/* the text and the buttons div */
+
+.text-container{
+  
+}
+
+.text {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: medium;
+}
 button {
   cursor: pointer;
   padding: 8px 16px;
